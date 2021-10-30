@@ -4,7 +4,6 @@ local o = vim.o
 local bo = vim.bo
 local wo = vim.wo
 local g = vim.g
-local remap = vim.api.nvim_set_keymap
 
 -- syntax / treesitter
 --require 'nvim-treesitter.configs'.setup {
@@ -21,11 +20,6 @@ g.splitbelow = true
 
 -- autopairs
 require 'nvim-autopairs'.setup{}
-
--- buffers
-remap('n', '<leader>[', '<cmd> :bprevious<CR>', {})
-remap('n', '<leader>]', '<cmd> :bnext<CR>', {})
-remap('n', '<leader>x', '<cmd> :bnext<CR>', {})
 
 -- virtual margin
 o.scrolloff = 5
@@ -103,5 +97,3 @@ require 'nvim-tree'.setup {
     }
   }
 }
-remap('n', '<leader>n', '<cmd> :NvimTreeToggle<CR>', {})
-remap('n', '<leader>r', '<cmd> :NvimTreeRefresh<CR>', {})
