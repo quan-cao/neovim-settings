@@ -81,10 +81,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/quan.cao/.local/share/nvim/site/pack/packer/start/copilot.vim"
   },
-  ["gruvbox-material"] = {
-    loaded = true,
-    path = "/Users/quan.cao/.local/share/nvim/site/pack/packer/start/gruvbox-material"
-  },
   ["limelight.vim"] = {
     loaded = true,
     path = "/Users/quan.cao/.local/share/nvim/site/pack/packer/start/limelight.vim"
@@ -117,13 +113,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/quan.cao/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
-  ["sphinx.nvim"] = {
+  ["vim-gitgutter"] = {
     loaded = true,
-    path = "/Users/quan.cao/.local/share/nvim/site/pack/packer/start/sphinx.nvim"
-  },
-  vim = {
-    loaded = true,
-    path = "/Users/quan.cao/.local/share/nvim/site/pack/packer/start/vim"
+    path = "/Users/quan.cao/.local/share/nvim/site/pack/packer/start/vim-gitgutter"
   },
   ["vim-pencil"] = {
     loaded = true,

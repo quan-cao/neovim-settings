@@ -18,6 +18,9 @@ g.syntax = 'on'
 -- split
 g.splitbelow = true
 
+-- updatetime
+o.updatetime = 100
+
 -- autopairs
 require 'nvim-autopairs'.setup{}
 

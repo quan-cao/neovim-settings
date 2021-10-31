@@ -18,9 +18,8 @@ packer.init()
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  -- syntax hightlighting
+  -- syntax highlight
   use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
-  use {'stsewd/sphinx.nvim', run=':UpdateRemotePlugins'}
 
   -- truezen
   use 'Pocco81/TrueZen.nvim'
@@ -39,15 +38,16 @@ packer.startup(function(use)
 
   -- autocomplete
   use 'github/copilot.vim' -- remember to run :Copilot setup afterwards
-  use {'neoclide/coc.nvim', branch = 'release'}
+  use {'neoclide/coc.nvim', branch='release'}   -- coc needs nodejs
 
   -- auto pairs
   use 'windwp/nvim-autopairs'
 
+  -- gitdiff
+  use {'airblade/vim-gitgutter', run=':GitGutterLineNrHighlightsEnable'}
+
   -- colorscheme
   use 'shaunsingh/nord.nvim'
-  use 'sainnhe/gruvbox-material'
-  use 'dracula/vim'
 end)
 
 vim.cmd([[
