@@ -1,8 +1,6 @@
 -- variables
 local vim = vim
 local o = vim.o
-local bo = vim.bo
-local wo = vim.wo
 local g = vim.g
 
 -- syntax / treesitter
@@ -14,6 +12,9 @@ local g = vim.g
   --}
 --}
 g.syntax = 'on'
+
+-- no swap file
+g.noswapfile = true
 
 -- split
 g.splitbelow = true
@@ -39,11 +40,11 @@ o.tabstop = 2
 o.softtabstop = 2
 o.shiftwidth = 2
 o.expandtab = true
-bo.autoindent = true
-bo.smartindent = true
+o.autoindent = true
+o.smartindent = true
 
 -- line number
-wo.number = true
+o.number = true
 
 -- colorscheme
 o.termguicolors = true
@@ -79,8 +80,8 @@ require 'lualine'.setup {
   },
   tabline = {
     lualine_a = {'buffers'},
-    lualine_b = {'branch'},
-    lualine_c = {'filename'},
+    lualine_b = {},
+    lualine_c = {},
     lualine_x = {},
     lualine_y = {},
     lualine_z = {'tabs'}

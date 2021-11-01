@@ -1,9 +1,9 @@
 -- variables
 local vim = vim
-local b = vim.b
+local w = vim.w
 
 -- wrap
-b['pencil#textwidth'] = 80
+w['pencil#textwidth'] = 80
 
 -- zen
 require 'true-zen'.setup{
@@ -64,11 +64,11 @@ require 'true-zen'.setup{
 }
 
 -- limelight
-b.limelight_conceal_ctermfg = 'gray'
-b.limelight_conceal_guifg = 'DarkGray'
-b.limelight_default_coefficient = 0.7
-b.limelight_paragraph_span = 1
-b.limelight_priority = -1
+w.limelight_conceal_ctermfg = 'gray'
+w.limelight_conceal_guifg = 'DarkGray'
+w.limelight_default_coefficient = 0.7
+w.limelight_paragraph_span = 1
+w.limelight_priority = -1
 
 -- function
 local M = {}

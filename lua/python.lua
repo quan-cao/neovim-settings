@@ -1,16 +1,16 @@
 -- variables
 local vim = vim
-local o = vim.o
-local b = vim.b
+local bo = vim.bo
+local wo = vim.wo
 
 local M = {}
 
 -- function
 M.run = function()
   -- tab, indent
-  o.tabstop = 4
-  o.softtabstop = 4
-  o.shiftwidth = 4
+  bo.tabstop = 4
+  bo.softtabstop = 4
+  bo.shiftwidth = 4
 
   vim.cmd [[ NoPencil ]]
   vim.cmd [[ Limelight! ]]
