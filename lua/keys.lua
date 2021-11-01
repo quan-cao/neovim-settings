@@ -4,7 +4,7 @@ local remap = vim.api.nvim_set_keymap
 
 -- indent/unindent with tab/shift-tab
 remap('n', '<Tab>', '>>', {})
-remap('n', '<Tab>', '<<', {})
+remap('n', '<S-Tab>', '<<', {})
 remap('i', '<S-Tab>', '<Esc><<i', {})
 remap('v', '<Tab>', '>gv', {})
 remap('v', '<S-Tab>', '<gv', {})
