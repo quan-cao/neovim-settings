@@ -14,7 +14,7 @@ local g = vim.g
 g.syntax = 'on'
 
 -- no swap file
-g.noswapfile = true
+vim.cmd('set noswapfile')
 
 -- split
 g.splitbelow = true
