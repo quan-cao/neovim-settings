@@ -48,6 +48,7 @@ packer.startup(function(use)
 
   -- colorscheme
   use 'shaunsingh/nord.nvim'
+  use 'EdenEast/nightfox.nvim'
 end)
 
 vim.cmd([[
