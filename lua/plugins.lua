@@ -31,7 +31,7 @@ packer.startup(function(use)
   use 'reedes/vim-pencil'
 
   -- tree
-  use 'kyazdani42/nvim-tree.lua'
+  use {'kyazdani42/nvim-tree.lua', requires={'kyazdani42/nvim-web-devicons'}}
 
   -- lualine
   use {'nvim-lualine/lualine.nvim', requires={'kyazdani42/nvim-web-devicons', opt=true}}
@@ -44,7 +44,7 @@ packer.startup(function(use)
   use 'windwp/nvim-autopairs'
 
   -- gitdiff
-  use {'airblade/vim-gitgutter', run=':GitGutterLineNrHighlightsEnable'}
+  use {'airblade/vim-gitgutter'}
 
   -- colorscheme
   use 'shaunsingh/nord.nvim'
